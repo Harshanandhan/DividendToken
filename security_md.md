@@ -10,7 +10,7 @@ We take the security of DividendToken seriously. If you discover a security vuln
 
 Instead, please report security issues via:
 
-1. **Email**: security@yourdomain.com (preferred)
+1. **Email**: harshanandhanreddy820@gmail.com
 2. **Private Security Advisory**: Use GitHub's private vulnerability reporting feature
 
 ### What to Include
@@ -254,13 +254,6 @@ Before mainnet deployment, we recommend:
 - OpenZeppelin 4.0.0 security features
 - Comprehensive test coverage
 - No known vulnerabilities
-
----
-
-## 🤝 Acknowledgments
-
-We thank the following security researchers for their contributions:
-- [List of contributors will be added here]
 
 ---
 
