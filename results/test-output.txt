@@ -1,0 +1,49 @@
+
+
+  DividendToken
+    Deployment
+      √ Should set the right owner (636ms)
+      √ Should have correct name and symbol
+      √ Should start with zero supply
+    Minting
+      √ Should mint tokens when sending ETH
+      √ Should update reserve balance on mint
+      √ Should emit TokensMinted event
+      √ Should revert when sending zero ETH
+      √ Should allow multiple users to mint
+    Burning
+      √ Should burn tokens and return ETH
+      √ Should emit TokensBurned event
+      √ Should revert when burning more than balance
+      √ Should revert when burning zero
+    Dividend Distribution
+      √ Should allow owner to distribute dividends
+      √ Should track total dividends distributed
+      √ Should calculate withdrawable dividends correctly
+      √ Should split dividends proportionally
+      √ Should allow users to withdraw dividends
+      √ Should revert when no dividends to withdraw
+      √ Should not give dividends to new minters for past distributions
+      √ Should revert if non-owner tries to distribute
+    Transfers and Dividend Tracking
+      √ Should transfer dividend rights with tokens
+    Staking
+      √ Should allow staking tokens
+      √ Should emit Staked event
+      √ Should allow unstaking
+      √ Should revert staking with insufficient balance
+      √ Should revert unstaking with nothing staked
+    View Functions
+      √ Should return correct account info
+      √ Should return correct contract stats
+    Edge Cases
+      √ Should handle very small mint amounts
+      √ Should handle multiple dividend distributions
+      √ Should allow partial dividend withdrawals
+    Security
+      √ Should be protected against reentrancy on burn
+      √ Should be protected against reentrancy on dividend withdrawal
+
+
+  33 passing (877ms)
+
