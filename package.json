@@ -1,7 +1,7 @@
 {
   "name": "dividend-token",
   "version": "1.0.0",
-  "description": "Mintable ERC-20 with ETH dividends and optional staking. Hardhat tests on the local network.",
+  "description": "Lab ERC-20 where staking and holder dividends compete for the same balance.",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test"
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Harshanandhan/DividendToken-Automated-ERC-20-Dividend-Distribution-Smart-Contract-with-ETH-Rewards"
+    "url": "https://github.com/Harshanandhan/dividend-token"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
