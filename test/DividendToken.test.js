@@ -389,8 +389,9 @@ describe("DividendToken", function () {
 
       expect(info.tokenBalance).to.equal(ethers.parseEther("700"));
       expect(info.staked).to.equal(ethers.parseEther("300"));
-      // Allow rounding tolerance for dividend calculation
-      expectCloseTo(info.withdrawableDividends, ethers.parseEther("0.7"));
+      // stake() transfers tokens to the contract, so later dividends follow
+      // the remaining balance (700/1000 of 0.7 ETH), not the original 1000.
+      expectCloseTo(info.withdrawableDividends, ethers.parseEther("0.49"));
     });
 
     it("Should return correct contract stats", async function () {

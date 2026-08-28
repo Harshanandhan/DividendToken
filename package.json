@@ -1,16 +1,10 @@
 {
   "name": "dividend-token",
   "version": "1.0.0",
-  "description": "A gas-optimized, mintable ERC-20 token with ETH dividend distribution and staking",
-  "main": "index.js",
+  "description": "Mintable ERC-20 with ETH dividends and optional staking. Hardhat tests on the local network.",
   "scripts": {
     "compile": "hardhat compile",
-    "test": "hardhat test",
-    "test:gas": "REPORT_GAS=true hardhat test",
-    "coverage": "hardhat coverage",
-    "deploy:local": "hardhat ignition deploy ./ignition/modules/DividendToken.js --network localhost",
-    "deploy:sepolia": "hardhat ignition deploy ./ignition/modules/DividendToken.js --network sepolia",
-    "node": "hardhat node"
+    "test": "hardhat test"
   },
   "keywords": [
     "ethereum",
@@ -18,16 +12,13 @@
     "erc20",
     "dividends",
     "staking",
-    "defi",
-    "web3",
-    "hardhat",
-    "smart-contracts"
+    "hardhat"
   ],
-  "author": "Harsha Nandhan Reddy (@Nandhanreddyy)",
+  "author": "Harsha Nandhan Reddy Gajulapalli <harshanandhanreddy820@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nandhanreddyy/DividendToken.git"
+    "url": "https://github.com/Harshanandhan/DividendToken-Automated-ERC-20-Dividend-Distribution-Smart-Contract-with-ETH-Rewards"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
@@ -54,5 +45,6 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.4.0"
-  }
+  },
+  "private": true
 }

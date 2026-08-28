@@ -15,7 +15,7 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
  * - Stake tokens to earn ETH dividends
  * - Gas-optimized dividend distribution using a pull mechanism
  * 
- * @author Harsha Nandhan Reddy (@Nandhanreddyy)
+ * @author Harsha Nandhan Reddy Gajulapalli (@Harshanandhan)
  */
 contract DividendToken is ERC20, Ownable, ReentrancyGuard {
     // ============ Constants ============
