@@ -4,48 +4,21 @@
   "command": "npx hardhat test",
   "network": "Hardhat local",
   "solidity": "0.8.24",
-  "date": "2026-08-27",
+  "date": "2026-09-09",
   "passing": 33,
   "failing": 0,
-  "duration_ms": 877,
+  "duration_ms": 534,
   "duration_s": 1,
   "groups": [
-    {
-      "name": "Deployment",
-      "count": 3
-    },
-    {
-      "name": "Minting",
-      "count": 5
-    },
-    {
-      "name": "Burning",
-      "count": 4
-    },
-    {
-      "name": "Dividend distribution",
-      "count": 8
-    },
-    {
-      "name": "Transfers and dividend tracking",
-      "count": 1
-    },
-    {
-      "name": "Staking",
-      "count": 5
-    },
-    {
-      "name": "View functions",
-      "count": 2
-    },
-    {
-      "name": "Edge cases",
-      "count": 3
-    },
-    {
-      "name": "Security (reentrancy guards still complete)",
-      "count": 2
-    }
+    { "name": "Deployment", "count": 3 },
+    { "name": "Minting", "count": 5 },
+    { "name": "Burning", "count": 4 },
+    { "name": "Dividend distribution", "count": 8 },
+    { "name": "Transfers and dividend tracking", "count": 1 },
+    { "name": "Staking", "count": 5 },
+    { "name": "View functions", "count": 2 },
+    { "name": "Edge cases", "count": 3 },
+    { "name": "Security (reentrancy guards still complete)", "count": 2 }
   ],
   "tests": [
     "Should set the right owner",
@@ -82,5 +55,5 @@
     "Should be protected against reentrancy on burn",
     "Should be protected against reentrancy on dividend withdrawal"
   ],
-  "note": "No public-network deploy in this run. No private key was used. One assertion was corrected: staked tokens do not keep holder dividends."
+  "note": "Lab only. No public-network deploy in this run. No private key was used. Last two Security tests only assert burn/withdrawDividends complete under ReentrancyGuard — not an exploit suite."
 }

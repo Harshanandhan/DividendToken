@@ -8,7 +8,7 @@ Send ETH to `mint` (1 ETH = 1000 DTK). The owner can push extra ETH through `dis
 
 `ReentrancyGuard` on mint, burn, withdraw, stake, and unstake. `onlyOwner` on `distributeDividends` and `fundStakingRewards`.
 
-This is a **lab contract**. Not an audit. Not deployed to a public network in this run.
+This is a **lab contract**. Not an audit. Not a product. Not deployed to a public network in this run.
 
 Author: **Harsha Nandhan Reddy Gajulapalli**  
 Email: **harshanandhanreddy820@gmail.com**  
@@ -28,11 +28,15 @@ npx hardhat test
 python render_images.py
 ```
 
-## Results
+## Evidence
 
-`npx hardhat test` on the local Hardhat network, Solidity 0.8.24, 2026-08-27.
+Command (this machine, Hardhat local, Solidity 0.8.24):
 
-**33 passing, 0 failing, 877ms.**
+```bash
+npx hardhat test
+```
+
+**2026-09-09 — 33 passing, 0 failing, 534ms.**
 
 ![Hardhat test results](images/results-tests.png)
 
@@ -48,11 +52,11 @@ python render_images.py
 | Edge cases | 3 | pass |
 | Reentrancy guards still complete | 2 | pass |
 
-The last two tests only check that `burn` and `withdrawDividends` finish. They are not an exploit suite.
+The last two tests only check that `burn` and `withdrawDividends` finish under `ReentrancyGuard`. They are not an exploit suite and do not prove absence of bugs.
 
 JSON: `results/tests.json`. Full log: `results/test-output.txt`.
 
-No private key. No testnet transaction.
+No private key. No testnet or mainnet transaction. Lab framing only — staking vs holder dividends competing for the same balance.
 
 ## Layout
 
